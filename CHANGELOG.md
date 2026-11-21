@@ -2,8 +2,8 @@
 
 ## 2026-11-21: Keygen CE v1.7.4
 
-- No breaking changes. Accounts, products, policies and licenses in Postgres are kept.
-- Fix for an upstream packaging bug: the `keygen/api:v1.7.4` image ships its start scripts with Windows (CRLF) line endings, so on its own it can't start (`env: can't execute 'bash\r'`). The Dockerfile strips the CRs from `/app/scripts/entrypoint.sh` and `/app/bin/*` at build time; on images without the bug this does nothing. The `release` step runs one new migration (a renewal strategy column on policies) before the web and worker start.
+- No breaking changes. Accounts, products, policies and licenses in Postgres are kept. The `release` step runs one new migration (a renewal strategy column on policies) before the web and worker start.
+- Fix for an upstream packaging bug: the `keygen/api:v1.7.4` image ships its start scripts with Windows (CRLF) line endings, so on its own it can't start (`env: can't execute 'bash\r'`). The Dockerfile strips the CRs from `/app/scripts/entrypoint.sh` and `/app/bin/*` at build time; on images without the bug this does nothing.
 - Keygen CE [v1.7.4](https://github.com/keygen-sh/keygen-api/compare/v1.7.3...v1.7.4): Rails and Ruby upgrades, rate limits on webhook endpoint changes, a timeout on DNS lookups in URL validation, read-only users can manage their own MFA, renewal strategies on policies, and dynamic filters on webhook events.
 - Image: `keygen/api:v1.7.4@sha256:199664efcb35365a5ad479d17ddab80c49b7083ab0561b85b0f96651fc77f558`.
 
