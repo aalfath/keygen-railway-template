@@ -4,7 +4,7 @@
 
 One-click [Railway](https://railway.com) template for [Keygen CE](https://keygen.sh/docs/self-hosting/), the self-hosted edition of Keygen's software licensing and distribution API.
 
-**Version:** Keygen CE `v1.7.3` (`keygen/api:v1.7.3@sha256:4a5550da52bb2ee9b37ba245ddfe5c3809e062efe802c5354510dfe4217e0102`, the official image on Docker Hub).
+**Version:** Keygen CE `v1.7.4` (`keygen/api:v1.7.4@sha256:199664efcb35365a5ad479d17ddab80c49b7083ab0561b85b0f96651fc77f558`, the official image on Docker Hub).
 
 ## What it deploys
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-21: Keygen CE v1.7.4
+
+- No breaking changes. Accounts, products, policies and licenses in Postgres are kept. The `release` step runs one new migration (a renewal strategy column on policies) before the web and worker start.
+- Keygen CE [v1.7.4](https://github.com/keygen-sh/keygen-api/compare/v1.7.3...v1.7.4): Rails and Ruby upgrades, rate limits on webhook endpoint changes, a timeout on DNS lookups in URL validation, read-only users can manage their own MFA, renewal strategies on policies, and dynamic filters on webhook events.
+- Image: `keygen/api:v1.7.4@sha256:199664efcb35365a5ad479d17ddab80c49b7083ab0561b85b0f96651fc77f558`.
+
 ## 2026-11-16: Keygen CE v1.7.3, built from this repo
 
 - **Breaking for nobody:** projects deployed earlier from the `keygen-1` template ran the image `keygen/api:v1.7.2` directly and don't follow this repo. New deploys build from here.
